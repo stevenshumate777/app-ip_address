@@ -35,15 +35,11 @@ if (numIpv4Segments === 4) {
         // Add a colon to split the encoded address and match the IPv6 format.
         if(i===1) {
           ipv6Address = ipv6Address + ':';
-          module.exports.getIpv4MappedIpv6Address = getIpv4MappedIpv6Address;
+          
         }
       }
     }
   }
   return ipv6Address;
 }
-
-/*
-  This section is used to test function and log any errors.
-  We will make several positive and negative tests.
-*/
+module.exports.getIpv4MappedIpv6Address = getIpv4MappedIpv6Address;
